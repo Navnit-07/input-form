@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Form</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form">
+        <form>
+          <h3 class="heading">Contact Us</h3>
+
+          <div class="name">
+            <div class="f-name">
+              <label for="firstname">First Name <span>*</span></label>
+              <input type="text" id="firstname" />
+
+              <div class="error-fname"><span>*</span> Please enter first name</div>
+            </div>
+
+            <div class="l-name">
+              <label for="lastname">Last Name <span>*</span></label>
+              <input type="text" id="lastname" />
+              <div class="error-lname"><span>*</span> Please enter last name</div>
+            </div>
+          </div>
+          <div class="email">
+            <label for="email-address">Email Address <span>*</span></label>
+            <input type="text" id="email-address" />
+            <div class="error-email"><span>*</span> Please enter email</div>
+          </div>
+          <div class="query">
+            <label>Query Type <span>*</span></label>
+            <div class="types">
+              <div class="general">
+                <input type="radio" id="general-enquiry" name="query-type" />
+                <label for="general-enquiry">General Enquiry</label>
+              </div>
+              <div class="support">
+                <input type="radio" id="support-request" name="query-type" />
+                <label for="support-request">Support Request</label>
+              </div>
+            </div>
+            <div class="error-type"><span>*</span> Please select error type</div>
+          </div>
+          <div class="message">
+            <label for="text-message">Message</label>
+            <textarea id="text-message"></textarea>
+          </div>
+          <div class="consent">
+            <input type="checkbox" id="consent-checkbox" />
+
+            <label for="consent-checkbox">I consent to being contacted by the team <span>*</span></label>
+
+            <div class="error-consent"><span>*</span> Agree the conditions</div>
+          </div>
+          <div class="submit">
+            <!-- <button id="submit">Submit</button> -->
+            <input type="button" value="Submit" id="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

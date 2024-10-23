@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    padding: 20px 10px;
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.form{
+    background-color: #ffff;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+}
+
+form{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+}
+
+.heading{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-fname{
+    color : red;
+    /* display: none; */
+    visibility: hidden;
+}
+.error-lname{
+    color : red;
+    /* display: none; */
+    visibility: hidden;
+}
+.error-email{
+    color : red;
+    /* display: none; */
+    visibility: hidden;
+}
+.error-type{
+    color : red;
+    /* display: none; */
+    visibility: hidden;
+}
+.error-consent{
+    color : red;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.error{
+    visibility: visible;
+}
+
+.submit{
+    display: flex;
+    margin-top: 2%;
+}
+
+#submit{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: hsl(169, 82%, 27%);
+    color: #ffff;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.f-name, .l-name{
+    width: 45%;
+}
+
+input[type=text], .support, .general{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid ;
+    border-color: hsl(186, 15%, 59%);
+    color: hsl(187, 24%, 22%);
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.support, .general{
+    width: 47%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+input[type="text"]{
+    display: block;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    outline: none;
+    transition: all 0.3s;
+}
+
+textarea{
+    display: block;
+    outline: none;
+    height: 80px;
+    width: 100%;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: hsl(186, 15%, 59%);
+    color: hsl(187, 24%, 22%);
+    transition: all 0.3s;
+    padding: 5px;
+    text-align: justify;
+    resize: none;
+}
+
+input[type=text]:focus, textarea:focus{
+    scale: 1.01;
+}
+
+.support, .general, #text-message{
+    margin-top: 2%;
+}
+
+.consent{
+    margin-top: 4%;
+}
+
+span{
+    color: red;
+}
+
+.types{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width : 375px) {
+    .form{
+        height: auto;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+    }
+    .f-name, .l-name{
+        width: 100%;
+    }
+    .types{
+        display: flex;
+        flex-direction: column;
+    }
+    .support, .general{
+        width: 100%;
+    }
+}
